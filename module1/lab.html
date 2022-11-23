@@ -26,7 +26,7 @@
     <ol>
       <li>
         In your favourite browser, navigate to
-        <a href="https://code.visualstudio.com/" target="_blank">
+        <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">
           https://code.visualstudio.com/
         </a>
       </li>
@@ -45,6 +45,7 @@
         <a
           href="https://www.geeksforgeeks.org/how-to-install-visual-studio-code-on-windows/"
           target="_blank"
+          rel="noopener"
         >
           more detailed instructions</a
         >.
@@ -82,10 +83,18 @@
           </li>
           <li>
             Now let's configure Prettier. Open VS Code settings by clicking on
-            File -> Preferences -> Settings. (i) Search for "Default formatter"
-            and choose "Prettier - Code formatter" from the list. (ii) Search
-            for "Format on Save" and check the checkbox. Close the Settings tab
-            when you are done.
+            File -> Preferences -> Settings or press ctrl + ,
+            <ol type="i">
+              <li>
+                In the settings search box, search for "Default formatter" and
+                choose "Prettier - Code formatter" from the list.
+              </li>
+              <li>
+                In the settings search box, search for "Format on Save" and
+                check the checkbox.
+              </li>
+              <li>Close the Settings tab when you are done.</li>
+            </ol>
           </li>
         </ol>
       </li>
@@ -111,14 +120,121 @@
             <a
               href="https://tonybaloney.github.io/vscode-pets/usage.html"
               target="_blank"
+              rel="noopener"
             >
               More info
             </a>
           </li>
-          <li>eslint (Useful for JavaScript, modules 7 - 8.</li>
+          <li>eslint (Useful for JavaScript, modules 7 - 8)</li>
         </ul>
       </li>
     </ol>
-    <h3>Part 3: Keeping Everything Organized and Testing</h3>
+    <h3>Part 3: Keeping Everything Organized</h3>
+    <p>
+      In this part, we are going to create a number of folders to keep the
+      projects organized. Then, we are going to create and test a basic web
+      page.
+    </p>
+    <ol>
+      <li>
+        Recommendation: storing your files in a cloud drive will help prevent
+        accidental data loss. Sign up and install a cloud drive like OneDrive,
+        Google Drive, or Dropbox before continuing. Ensure you download the
+        desktop application that integrates with Windows File Explorer. By the
+        way, SAIT provides you with a free 1 TB OneDrive account through
+        Microsoft 365.
+        <a
+          href="https://www.sait.ca/student-life/technical-support-and-resources/online-learning-tools-and-software"
+          target="_blank"
+          rel="noopener"
+          >more details</a
+        >
+      </li>
+      <li>
+        Open Windows File Explorer. You can do this by hitting the Windows key
+        on your keyboard and searching for "file explorer" or press [Windows
+        key] + e
+      </li>
+      <li>
+        Click on "View" in the top menu and ensure that "File name extensions"
+        and "Hidden items" are checked. You are now a power user!<br />
+        <img src="lab1.png" />
+      </li>
+      <li>
+        Find a suitable location to store your labs and assignments, e.g.
+        Documents or a cloud drive folder.
+      </li>
+      <li>Create a folder called CPRG-213</li>
+
+      <li>
+        Inside of CPRG-213 create the following folders:
+        <ol type="a">
+          <li>Lab0</li>
+          <li>Lab1</li>
+          <li>Lab2</li>
+          <li>Lab3</li>
+          <li>Lab4</li>
+          <li>Lab5</li>
+          <li>Lab6</li>
+          <li>Assignment1</li>
+          <li>Assignment2</li>
+          <li>Assignment3</li>
+        </ol>
+      </li>
+    </ol>
+    <h3>Part 4: Testing Your Development Environment</h3>
+    <ol>
+      <li>Open VS Code</li>
+      <li>
+        Choose File -> Open Folder and open the Lab0 folder you just created.
+      </li>
+      <li>
+        If you get a warning message about trusting the contents, check the
+        checkbox "Trust the authors of the parent folder" and click the button
+        "Yes, I trust the authors". You should trust the authors because you are
+        the author!
+      </li>
+      <li>
+        In the left sidebar "Explorer", hover your mouse cursor over the text
+        "Lab 0" and click the first button "New File"
+      </li>
+      <li>Enter the file name: index.html</li>
+      <li>
+        Copy and paste the following text into index.html.
+        <a
+          href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program"
+          target="_blank"
+          rel="noopener"
+          >What is Hello, World?</a
+        >
+        <pre>
+&lt;!DOCTYPE&nbsp;html&gt;
+&lt;html&gt;
+&nbsp;&nbsp;&lt;head&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Hello,&nbsp;World!&lt;/title&gt;
+&nbsp;&nbsp;&lt;/head&gt;
+&nbsp;&nbsp;&lt;body&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello&nbsp;World!&lt;/h1&gt;
+&nbsp;&nbsp;&lt;/body&gt;
+&lt;/html&gt;
+        
+        </pre>
+      </li>
+      <li>Save the document with either File -> Save or Ctrl+s</li>
+      <li>
+        Click the "Show Preview" button in the top-right corner of VS Code.
+      </li>
+      <li>Change the text to say "Hello [your name]" with your name.</li>
+      <li>Save the document.</li>
+      <li>
+        Use Windows File Explorer and find the file index.html. Double click on
+        the file to view in your default browser.
+      </li>
+    </ol>
+    <h1>
+      Congratulations on correctly setting up your development environment for
+      this course!
+    </h1>
+    <p>There is nothing to submit to Brightspace.</p>
   </body>
 </html>
