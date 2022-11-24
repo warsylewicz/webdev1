@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
-<html>
-  <head> </head>
+<html lang="en">
+  <head>
+    <title>Lab 0 Development Environment Setup</title>
+  </head>
   <body
     style="
       font-family: arial, helvetica, sans-serif;
@@ -70,6 +72,7 @@
         Click the Extensions icon in the Activity Bar on the side of VS Code to
         open up Extensions View.<br /><img
           src="https://code.visualstudio.com/assets/docs/editor/extension-marketplace/extensions-view-icon.png"
+          alt="Extensions view con"
         />
       </li>
       <li>
@@ -109,11 +112,32 @@
           </li>
         </ol>
       </li>
+
       <li>
         There are few other optional extensions that you may consider
         installing. Search for these extensions and decide for yourself if you
         want them. You can install and uninstall extensions to try them out too.
         <ul>
+          <li>
+            W3C Web Validator. Automatically check the validity of your HTML and
+            CSS files.
+            <ol type="a">
+              <li>In the Extensions sidebar, search for "w3c web validator"</li>
+              <li>
+                After you have installed the extension, open VS Code settings
+                (Ctrl + ,) and search for "webvalidator" and check "Validate on
+                Save".
+              </li>
+              <li>
+                Warning: both Prettier and W3C Web Validator are highly
+                opinionated but have slightly different opinions. W3C Web
+                Validator is a great learning tool but can get annoying due to
+                the warnings. Please ignore the warnings (code underlined with
+                yellow squiggly lines) and focus only on the errors (code
+                underlined with red squiggly lines).
+              </li>
+            </ol>
+          </li>
           <li>Indent-Rainbow</li>
           <li>
             vscode-pets (fun!)
@@ -157,8 +181,8 @@
       </li>
       <li>
         Click on "View" in the top menu and ensure that "File name extensions"
-        and "Hidden items" are checked. You are now a power user!<br />
-        <img src="lab1.png" />
+        and "Hidden items" are checked. Consider yourself a power user now!<br />
+        <img src="lab1.png" alt="View file name extensions" />
       </li>
       <li>
         Find a suitable location to store your labs and assignments, e.g.
@@ -209,9 +233,9 @@
         >
         <pre>
 &lt;!DOCTYPE&nbsp;html&gt;
-&lt;html&gt;
+&lt;html&nbsp;lang=&quot;en&quot;&gt;
 &nbsp;&nbsp;&lt;head&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Hello,&nbsp;World!&lt;/title&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Hello&nbsp;World!&lt;/title&gt;
 &nbsp;&nbsp;&lt;/head&gt;
 &nbsp;&nbsp;&lt;body&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello&nbsp;World!&lt;/h1&gt;

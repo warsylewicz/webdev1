@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
     <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
-    <link rel="stylesheet" href="../reveal.js/dist/theme/white.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/theme/aaron.css" />
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" />
@@ -19,16 +19,13 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>Slide 1</section>
-        <section>Slide 2</section>
-        <section>
-          <pre><code data-trim data-noescape>
-		  (def lazy-fib
-			(concat
-			 [0 1]
-			 ((fn rfib [a b]
-				  (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
-			</code></pre>
+        <section data-markdown>
+          <textarea data-template>
+# Module 1
+# Website Fundamentals
+---
+
+          </textarea>
         </section>
       </div>
     </div>
@@ -45,6 +42,7 @@
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
+        slideNumber: "c/t",
 
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [
