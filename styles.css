@@ -4,6 +4,11 @@ body {
   color: #202122;
 }
 
+p,
+li {
+  line-height: 1.4em;
+}
+
 h1,
 h2,
 h3,
