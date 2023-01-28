@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Lecture: HTML Sectioning Elements</title>
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/theme/aaron.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown>
+          <textarea data-template>
+# Unit 4
+# Sectioning Elements
+---
+## Two Categories of HTML Sectioning Elements
+
+* Non-semanatic
+* Semantic
+---
+## Non-semanatic Sectioning (Block) Element
+
+```div``` (division)
+
+Example:
+
+```<div>text/other tags/another div</div>```
+---
+## Semanatic Sectioning (Block) Elements
+
+* header
+* main
+* footer
+* article
+* aside
+* nav
+* section
+
+---
+## Unit 4 Activity
+
+## Sectioning Elements
+
+---
+## Let's go find some examples!
+
+* View Page Source
+* Inspector Tool
+
+---
+## Individual Activity: Sectioning Elements
+
+For your favourite web page:
+* view the page source
+  * search for each sectioning element 
+  * list the sectioning elements
+* use the inspector tool to visually identify the sectioning elements
+
+---
+## Another non-semanatic element
+
+```span``` (an inline element)
+
+Example:
+
+```<span>text/other inline elements</span>```
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="../reveal.js/plugin/search/search.js"></script>
+    <script src="../reveal.js/plugin/zoom/zoom.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        slideNumber: "c/t",
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom,
+        ],
+      });
+    </script>
+  </body>
+</html>
