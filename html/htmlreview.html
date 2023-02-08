@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>HTML Review</title>
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/theme/aaron.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown>
+          <textarea data-template>
+# HTML Review
+---
+## Tags to Know
+### Unit 2: HTML Fundamentals
+
+```doctype, html, head, meta charset, title, body, h1 - h6, p, img, <!-- comments -->, em, strong```
+
+---
+## Tags to Know
+### Unit 3: Interactive HTML Elements
+
+```a, ol, ul, li, table, tr, th, td, form, input, textarea, button, label```
+---
+## Tags to Know
+### Unit 4: HTML Sectioning Elements
+
+```header, main, footer, article, aside, nav, section, div, span```
+---
+## Activity: Find the Errors
+
+For each of the following HTML documents, locate the error and determine how to fix it.
+
+Answers are found on the last slide. Don't peak! 👀
+---
+## #1
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <h1>Big Heading!<h1>
+  </body>
+</html>
+```
+---
+## #2
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <h3>Smaller heading</h4>
+  </body>
+</html>
+```
+---
+## #3
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <p>First-line
+    <p>Next paragraph
+  </body>
+</html>
+```
+---
+## #4
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <h1>Big <strong>bold</h1> heading</strong>
+  </body>
+</html>
+```
+---
+## #5
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <div>
+      <h1>Some Heading</h1>
+    </div>
+    <div>
+      Page content
+    </div>
+  </body>
+</html>
+```
+---
+## #6
+
+```
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Some Heading</h1>
+    </header>
+    <main>
+      <p><strong>Page</strong> <em>content</em></p>
+    </main>
+  </body>
+</html>
+```
+---
+## #7
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dog Pictures!</title>
+  </head>
+  <body>
+    <h1>Dog Pictures!</h1>
+    <img Src="dog.jpg" alt="photo of dog">
+  </body>
+</html>
+```
+---
+## #8
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lot's of dogs!</tittle>
+  </head>
+  <body>
+    <h1>More Dog Pictures!</h1>
+    <img src="dog1.jpg" alt="photo of dog">
+    <img src="dog2.jpg" alt="photo of dog">
+    <img src="dog3.jpg" alt="photo of dog">
+    <img src="dog4.jpg" alt="photo of dog">
+  </body>
+</html>
+```
+---
+## #9
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dog Pictures!</title>
+  </head>
+  <body>
+    <h1>Dog Pictures!</h1>
+    <img src = "dog.jpg" alt = "my favourite dog">
+  </body>
+</html>
+```
+---
+## #10
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <header><h1>Some Heading</h1></header>
+    <main>
+      Page content<br>
+      More page content<br>
+      Even more page content<br>
+    </main>
+  </body>
+</html>
+```
+---
+## #11
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>❤️➕➖✖️➗❤️</title>
+  </head>
+  <body>
+    <h1>❤️🅼🅰🆃🅷!❤️</h1>
+    <p>1 + 1 = 2</p>
+    <p>10 - 3 < 10 + 3</p>
+    <p>cos(π) = -1</p>
+    <p>d/dx (2x) = 2</p>
+  </body>
+</html>
+```
+---
+## #12
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping List App</title>
+  </head>
+  <body>
+    <h1>My Shopping List</h1>
+    <list>
+      <li>Flour</li>
+      <li>Eggs</li>
+      <li>Milk</li>
+    </list>
+  </body>
+</html>
+```
+---
+## Answers
+
+1. Missing closing tag for `h1`
+2. Wrong closing tag for `h3`
+3. Missing closing tag for `p`
+4. Tags not nested correctly
+5. Not using semantic elements
+6. DOCTYPE is missing
+7. `Src` should be `src`
+8. `tittle` should be `title`
+9. Don't put spaces around `=` in attributes
+10. Don't use `<br>` for paragraphs
+---
+## Answers
+
+11. The less than sign in the second paragraph is not escaped with ```&amp;lt;```
+12. `list` should be `ul`
+
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="../reveal.js/plugin/search/search.js"></script>
+    <script src="../reveal.js/plugin/zoom/zoom.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        slideNumber: "c/t",
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom,
+        ],
+      });
+    </script>
+  </body>
+</html>
