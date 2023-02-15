@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Lecture: Introduction to CSS Part 1</title>
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/theme/aaron.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown>
+          <textarea data-template>
+# Unit 5
+# Introduction to CSS Part 1
+---
+## What is CSS?
+
+- CSS stands for Cascading Style Sheets
+- CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+- CSS saves a lot of work. It can control the layout of multiple web pages all at once
+- External stylesheets are stored in CSS files, e.g. styles.css
+
+> Cascading refers to the order in which styles are applied when more than one rule applies to a single element.
+---
+## Example of External CSS
+  
+index.html
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+      <h1>This Heading is Red</h1>
+    </body>
+  </html>
+  ```
+
+styles.css
+  ```css
+  h1 {
+    color: red;
+  }
+  ```
+---
+## CSS Syntax
+
+- A CSS rule-set consists of a selector and a declaration block
+- The selector points to the HTML element you want to style
+- The declaration block contains one or more declarations separated by semicolons
+- Each declaration includes a CSS property name and a value, separated by a colon
+- A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces
+---
+## CSS Syntax Example
+```css
+selector {
+  property: value;
+  property: value;
+}
+```
+---
+## CSS Example
+
+```css
+/* Style all h1 elements as red and 25px */
+h1 {
+  color: red;
+  font-size: 25px;
+}
+```
+---
+## CSS Selectors
+
+- Selectors are used to select the HTML element(s) you want to style.
+- There are many different types of selectors, which allow you to select elements based on their:
+  1. element (element name)
+  2. class (value of the class attribute)
+  3. id (value of the id attribute)
+  4. descendant (element that is a descendant/nested of another element)
+---
+## 1. Element Selector
+
+- Selects all elements of the specified element name
+
+HTML
+```html
+<h1>This is a red heading</h1>
+<p>This is a blue paragraph.</p>
+<p>This paragraph is blue too.</p>
+<div>This is a (default) black div.</div>
+```
+
+CSS
+```css
+h1 {
+  color: red;
+}
+p {
+  color: blue;
+}
+```
+---
+## 2. Class Selector
+
+- Selects all elements with the specified class attribute
+```html
+<h1 class="message">This is a blue heading</h1>
+<p class="warning">This is a red paragraph.</p>
+<p class="message">This is a blue paragraph.</p>
+```
+
+```css
+.warning {
+  color: red;
+}
+.message {
+  color: blue;
+}
+```
+---
+## 3. ID Selector
+
+- Selects the element with the specified id attribute
+```html
+<h1 id="title">Single Title</h1>
+<p class="warning" id="really-bad-warning">Really bad warning!</p>
+<p class="warning">Just another regular warning.</p>
+```
+
+```css
+#title {
+  font-weight: bold;
+  font-size: 40px;
+}
+.warning {
+  color: red;
+}
+#really-bad-warning {
+  font-size: 30px;
+}
+```
+---
+## 3. ID Selector Bad Example
+
+```html
+<h1 id="title">Single Title</h1>
+<h2 id="title">Another Title</h2>
+```
+
+> Never (ever!) use the same id for more than one element on a page!
+---
+## 4. Descendant Selector
+
+- Selects all elements that are descendants of a specified element
+
+```html
+<section class="container">
+  <h2>This is a red heading</h1>
+</section>
+<h2>This isn't red.</h2>
+```
+
+```css
+.container h2 {
+  color: red;
+}
+
+---
+## More Than One selector
+
+- You can select more than one element by separating each selector with a comma
+```html
+<h1 class="highlight">Italic heading</h1>
+<p class="message">Italic paragraph</p>
+```
+
+```css
+.highlight, .message {
+  font-style: italic;
+}
+```
+---
+## Fun CSS Demo
+
+https://jsfiddle.net/warsylewicz/4hu9nb1r/8/
+
+---
+## CSS Properties - Part 1
+
+- color (color name, red/green/blue values)
+- background-color (color name, red/green/blue values)
+- font-family (Arial, Helvetica, sans-serif)
+- font-size (px)
+- font-weight (bold, normal)
+- font-style (italic, normal)
+- text-decoration (underline, overline, line-through)
+- line-height (px)
+- text-align (left, right, center, justify)
+---
+## Design Principles
+
+- You will learn more about UI/UX design next semester
+- If you want to know more now, here is one good starting point: https://anthonyhobday.com/sideprojects/saferules/
+
+---
+## Activity
+
+
+
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="../reveal.js/plugin/search/search.js"></script>
+    <script src="../reveal.js/plugin/zoom/zoom.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        slideNumber: "c/t",
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom,
+        ],
+      });
+    </script>
+  </body>
+</html>
