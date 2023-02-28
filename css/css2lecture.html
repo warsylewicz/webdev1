@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Lecture: Introduction to CSS Part 1</title>
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/theme/aaron.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown>
+          <textarea data-template>
+# Unit 5
+# Introduction to CSS Part 2
+---
+## CSS Topics
+
+### Pseudo-classes
+
+### Box model
+---
+## Pseudo-classes
+
+- Pseudo-classes are used to define a special state of an element
+- Pseudo-classes are used to style an element when a user mouses over it, when it gets focus, etc.
+- Pseudo-classes are always preceded by a colon :
+
+> Pseudo means "fake" or "false"
+---
+## Pseudo-classes for Anchor Tags
+
+- :link - a normal, unvisited link
+- :visited - a link the user has visited
+- :hover - a link when the user mouses over it
+- :active - a link the moment it is clicked
+---
+## Example of Pseudo-classes
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <a href="https://news.ycombinator.com">Hacker News</a>
+  </body>
+</html>
+```
+
+```css
+a:link {
+  color: green;
+}
+a:visited {
+  color: red;
+}
+a:hover {
+  color: hotpink;
+}
+a:active {
+  color: blue;
+}
+```
+---
+## Combining Pseudo-classes with Selectors
+
+https://jsfiddle.net/warsylewicz/tb07snu9/1/
+
+---
+## Box Model
+
+- Every element on a web page is a rectangular box
+- The box model is essentially a box that wraps around every HTML element
+- It consists of: margins, borders, padding, and the actual content
+
+![Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png)
+
+---
+## Box Model Activity
+
+Complete the Unit 5: Box Model Activity
+
+(Answers on the next slides.)
+---
+## Box Model Activity Answers
+
+2a.
+
+* Content: the center of the box, where text and images appear
+* Padding: space within an element, between the edge of the box and the content the element contains
+* Border: outer edge of an element
+* Margin: space around an element, between the element and its neighbors
+---
+2b. If there is too much content, it will grow outside of the container
+
+More examples:
+https://www.w3schools.com/csS/css_overflow.asp
+---
+8. Yes. The content width changes.
+9. No.
+---
+11. The four sides of the border values are 2 px. Everything else stays the same.
+12. Similar to the box model as shown. (Using Firefox, mine still has a margin of 0 though. Content height is 36 px because my name is long and wrapped to two lines.)
+13. Similar to the box model as shown.
+14. 174 px x 110 px. The content height is 110 px because my name wrapped to two lines. If your name fit on one line, then the height is 92px.
+
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="../reveal.js/plugin/search/search.js"></script>
+    <script src="../reveal.js/plugin/zoom/zoom.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        slideNumber: "c/t",
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom,
+        ],
+      });
+    </script>
+  </body>
+</html>
