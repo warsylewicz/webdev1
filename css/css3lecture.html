@@ -21,7 +21,7 @@
       <div class="slides">
         <section data-markdown>
           <textarea data-template>
-# Unit 5
+# Unit 6
 # Page Layouts
 ---
 ## Page Layouts Using Flexbox
@@ -29,7 +29,7 @@
 - Flexbox is a layout mode for CSS3
 - Flexbox is a one-dimensional layout method for laying out items in rows or columns
 ---
-## Basic Terminology
+## Terminology
 
 - **Container**: The element that contains the flex items
 - **Flex item**: The children of the flex container
@@ -37,15 +37,24 @@
 ---
 ## Flex Container Properties
 ---
-- **display**: Defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children
+- **display**: Defines a flex container
+
+Example:
 
 ```css
 .container {
   display: flex;
 }
 ```
+```html
+<section class="container">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</section>
+
 ---
-- **flex-direction**: Establishes the main-axis, thus defining the direction flex items are placed in the flex container
+- **flex-direction**: Establishes the main-axis, thus defining the direction flex items are placed in the flex container.
 
 ```css
 .container {
@@ -53,7 +62,7 @@
 }
 ```
 ---
-- **flex-wrap**: By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property
+- **flex-wrap**: By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
 
 ```css
 .container {
@@ -61,7 +70,7 @@
 }
 ```
 ---
-- **justify-content**: This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size
+- **justify-content**: This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible.
 
 ```css
 .container {
@@ -91,14 +100,13 @@
 ## Flexbox Demo
 
 https://jsfiddle.net/warsylewicz/undm0bas/
+
+(Right-click -&gt; open in new tab)
 ---
 ## Flexbox Activity
 
-Starting from the JSFiddle, create the layout that is drawn on the whiteboard. Change the HTML and CSS as necessary. Hint: You may need to add additional HTML elements to the page.
-
-
-
-
+1. Open the web page in a new tab (right-click -&gt; new tab) https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills
+2. Complete Task 1, Task 2 and the additional question for Task 2.
 
 
           </textarea>
