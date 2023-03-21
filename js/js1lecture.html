@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Lecture: Introduction to CSS Part 1</title>
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/theme/aaron.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown>
+          <textarea data-template>
+# Unit 7
+# Introduction to JavaScript
+---
+## What is JavaScript?
+
+- a lightweight, interpreted, or just-in-time (JIT) compiled programming language with first-class functions.
+- a prototype-based, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.
+- used to make web pages interactive.
+- official name is ECMAScript
+- "Java is to JavaScript as car is to carpet"
+---
+## JavaScript Example
+
+js1demo1.html
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Example</title>
+  </head>
+  <body>
+    <h1>JavaScript Example</h1>
+    <p id="message">Hello World!</p>
+    <button id="hello-button">Say Hello</button>
+    <script src="scripts/js1demo1.js"></script>
+  </body>
+</html>
+```
+---
+## JavaScript Example (continued)
+
+js1demo1.js
+```js
+let helloButton = document.getElementById("hello-button");
+helloButton.addEventListener("click", changeMessage);
+
+function changeMessage() {
+  let messageElement = document.getElementById("message");
+  messageElement.innerHTML = "Hello, JavaScript!";
+}
+```
+
+Try it: [js1demo1.html](js1demo1.html)
+---
+### DOM and source code are no longer the same!
+
+Review: https://www.w3schools.com/js/js_htmldom.asp
+---
+## getElementById()
+
+- The getElementById() method returns the element that has the ID attribute with the specified value.
+- This method is one of the most common methods in the HTML DOM, and is used almost every time you want to manipulate, or get info from, an element on your document.
+
+- example:
+```js
+let someElement = document.getElementById("someId");
+```
+---
+## Things you can do with an element
+
+- Change the content of the element
+- Change the style of the element
+- Add/remove the elements
+- React to user events
+---
+## Change the HTML content: innerHTML
+
+- The innerHTML property sets or returns the HTML content (inner HTML) of an element.
+- The innerHTML property can be used on any HTML element, and on any HTML element, including the HTML element itself.
+---
+## Change the CSS style: style
+
+- The style property sets or returns the style attribute of an element.
+- Examples:
+```js
+let someElement = document.getElementById("someId");
+someElement.style.color = "red";
+someElement.style.backgroundColor = "yellow";
+someElement.style.fontSize = "24px";
+```
+---
+## Example
+
+[js1demo2.html](js1demo2.html)
+
+See the source code for the JavaScript: [js1demo2.js](scripts/js1demo2.js)
+---
+## JavaScript Events
+
+- Events are actions or occurrences that happen in the system you are programming, which the system tells you about so you can respond to them in some way if desired.
+- Events are a simple way to get started with JavaScript programming.
+- Events are a part of the Document Object Model (DOM) and every HTML element contains a set of events which you can trigger.
+---
+## Event Listeners
+
+- Event listeners are a way to handle events in JavaScript.
+- Event listeners are a part of the Document Object Model (DOM) and every HTML element contains a set of events which you can trigger.
+- Event listeners are a procedure or function in a computer program that waits for an event to occur.
+---
+## Examples of Event listeners
+
+- Listen for a click event on the button with the id of "hello-button" and call the function changeMessage when the event occurs.
+```js
+let helloButton = document.getElementById("hello-button");
+helloButton.addEventListener("click", changeMessage);
+```
+
+- Listen for a keydown event on the document (the whole page!) and call the function movePlayerCharacter when the event occurs.
+```js
+document.addEventListener('keydown', movePlayerCharacter);
+```
+---
+## Activity: Events
+
+In small groups, discuss the following questions:
+  1. Without using the internet, list as many HTML events as you can think of.
+  2. Look at the common HTML events on https://www.w3schools.com/jsref/dom_obj_event.asp. Were the events that you listed in question 1 on this list?
+  3. What do you think are the top 3 most common events?
+  4. For each of the top 3 events, what are some examples of when they might be used?
+
+
+
+
+
+
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="../reveal.js/plugin/search/search.js"></script>
+    <script src="../reveal.js/plugin/zoom/zoom.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        slideNumber: "c/t",
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom,
+        ],
+      });
+    </script>
+  </body>
+</html>
