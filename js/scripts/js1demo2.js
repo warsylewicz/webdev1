@@ -3,7 +3,7 @@ helloButton.addEventListener("click", changeMessage);
 
 function changeMessage() {
   let messageElement = document.getElementById("message");
-  messageElement.innerHTML = "Hello, JavaScript!";
+  messageElement.innerHTML = "Hello JavaScript!";
 
   messageElement.style.color = "#ff3333";
   messageElement.style.backgroundColor = "#000000"; // CSS property is: background-color
