@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Lecture: Introduction to CSS Part 1</title>
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/theme/aaron.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown>
+          <textarea data-template>
+# Unit 8
+# Applying JavaScript
+---
+## Topics: Part 1
+
+- variables
+- data types
+- input
+- output
+- operators
+- data type conversion
+- conditional statements
+---
+## Topics: Part 2
+
+- loops
+- functions
+- more DOM manipulation
+
+---
+## Variables
+
+- a variable is a named storage for data
+- a variable is declared with the `let` keyword
+- a variable is assigned a value with the `=` operator
+
+```js
+let message;
+message = "Hello World!";
+
+let age = 21;
+age = 22;
+```
+---
+## Data Types
+
+- JavaScript has several data types
+- e.g. `number`, `string`, `boolean`, `null`, `undefined`, `object`
+
+```js
+let age = 21; // number
+let name = "Anne"; // string
+let isStudent = true; // boolean
+let y = null; // null
+let x; // undefined
+let student = { name: "Anne", age: 21 }; // object
+```
+---
+## Input
+
+- input is obtained from the user with the `prompt()` function
+- the `prompt()` function returns a string
+
+```js
+let name = prompt("What is your name?");
+```
+---
+## Output
+
+3 ways to output data
+
+1. `alert()` - displays a message in a popup window
+2. `console.log()` - displays a message in the browser console
+3. `innerHTML` - displays a message in an HTML element
+
+```js
+alert("Error! Please enter a valid password.");
+console.log("The value of x is " + x);
+document.getElementById("demo").innerHTML = "Hello World!";
+```
+---
+## Operators
+
+- arithmetic operators, e.g. `+`, `-`, `*`, `/`, `**`
+- assignment operators, e.g. `=`
+- comparison operators, e.g. `==`, `===`, `!=`, `!==`, `&gt;`, `&lt;`, `&gt;=`, `&lt;=`
+- logical operators, e.g. `&&`, `||`, `!`
+
+```js
+let x = 5; // assignment operator
+let y = 2; // assignment operator
+let z = x + y; // arithmetic operator
+let a = x == y; // comparison operator (same value)
+let b = x === y; // comparison operator (same value and type)
+let c = x &gt; 0 && x &lt; 10; // logical operator "and"
+let d = x === 0 || x === 10; // logical operator "or"
+let e = !(x &gt; 0 && x &lt; 10); // logical operator "not"
+```
+---
+## Activity
+
+- Operators Exercise 1: https://www.w3schools.com/Js/exercise_js.asp?filename=exercise_js_operators1
+- Operators Exercise 2: https://www.w3schools.com/Js/exercise_js.asp?filename=exercise_js_operators2
+- Data Types Exercise: https://www.w3schools.com/Js/exercise_js.asp?filename=exercise_js_datatypes1
+
+---
+## Data Type Conversion
+
+- JavaScript is a loosely typed language
+- JavaScript automatically converts data types as needed
+- parseInt - converts a string to a number
+
+```js
+let x = "123"; // string
+let y = 456; // number
+let z = x + y; // 123456
+let zz = x * 2; // 246
+
+let a = parseInt(x); // 123
+let b = a + y; // 579
+```
+---
+## Conditional Statements
+
+- `if` statement
+- `if...else` statement
+
+```js
+let x = 5;
+if (x &gt; 0) {
+  console.log("x is positive");
+}
+
+let y = 5;
+if (y &gt; 0) {
+  console.log("y is positive");
+} else {
+  console.log("y is negative");
+}
+```
+---
+## Conditional Statements
+
+- `if...else if...else` statement
+
+```js
+let x = 5;
+if (x &gt; 0) {
+  console.log("x is positive");
+} else if (x &lt; 0) {
+  console.log("x is negative");
+} else {
+  console.log("x is zero");
+}
+```
+---
+## Activity
+
+- Comparisons exercise 1: https://www.w3schools.com/Js/exercise_js.asp?filename=exercise_js_comparisons1
+- Comparisons exercise 2: https://www.w3schools.com/Js/exercise_js.asp?filename=exercise_js_comparisons2
+- Comparisons exercise 3: https://www.w3schools.com/Js/exercise_js.asp?filename=exercise_js_comparisons3
+- Conditions exercise 1: https://www.w3schools.com/Js/exercise_js.asp?filename=exercise_js_conditions1
+- Conditions exercise 2: https://www.w3schools.com/Js/exercise_js.asp?filename=exercise_js_conditions2
+---
+## Activity
+
+Finish the code in the following fiddle:
+
+https://jsfiddle.net/warsylewicz/w91L34hp/
+
+Extra challenge activities:
+
+1. If the user leaves the input blank, display an error message.
+2. Add a paragraph element to the HTML file and display the message in the paragraph element.
+
+
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="../reveal.js/plugin/search/search.js"></script>
+    <script src="../reveal.js/plugin/zoom/zoom.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        slideNumber: "c/t",
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom,
+        ],
+      });
+    </script>
+  </body>
+</html>
