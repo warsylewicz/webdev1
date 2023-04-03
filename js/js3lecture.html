@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Lecture: Applying JavaScript Part 2</title>
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/theme/aaron.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown>
+          <textarea data-template>
+# Unit 8
+# Applying JavaScript Part 2
+---
+## Topics: Part 1
+
+- variables
+- data types
+- input
+- output
+- operators
+- data type conversion
+- conditional statements
+---
+## Topics: Part 2
+
+- loops
+- functions
+- more DOM manipulation
+
+---
+
+## Loops
+
+- a loop is a block of code that repeats a set of instructions
+- a loop is useful when you need to repeat a set of instructions multiple times
+- we'll cover two types of loops:
+  - `for` loop
+  - `while` loop
+---
+
+## `for` Loop
+
+- a `for` loop repeats until a specified condition evaluates to `false`
+- the syntax for a `for` loop is:
+
+```js
+for (initialization; condition; final-expression) {
+  // code to be executed
+}
+```
+
+- the `initialization` statement is executed once before the loop starts
+- the `condition` statement is evaluated at the beginning of each loop iteration
+- the `final-expression` statement is executed at the end of each loop iteration
+- the `for` loop will continue to loop as long as the `condition` is `true`
+---
+
+## `for` Loop Example
+
+- let's write a `for` loop that prints the numbers 1 through 10 to the console
+
+```js
+for (let i = 1; i &lt;= 10; i++) {
+  console.log(i);
+}
+```
+
+- the `initialization` statement sets the variable `i` to 1
+- the `condition` statement checks if `i` is less than or equal to 10
+- the `final-expression` statement increments `i` by 1
+- the `for` loop will continue to loop as long as `i` is less than or equal to 10
+- the `for` loop will stop looping when `i` is greater than 10
+---
+
+## `while` Loop
+
+- a `while` loop repeats until a specified condition evaluates to `false`
+- the syntax for a `while` loop is:
+
+```js
+while (condition) {
+  // code to be executed
+}
+```
+
+
+- the `condition` statement is evaluated at the beginning of each loop iteration
+- the `while` loop will continue to loop as long as the `condition` is `true`
+- the `while` loop will stop looping when the `condition` is `false`
+---
+
+## `while` Loop Example
+
+- let's write a `while` loop that prompts the user for a valid number
+
+```js
+let number = prompt("Enter a number");
+while (number == null || parseInt(number) != number) {
+  alert("❌ Invalid. Please try again.");
+  number = prompt("Enter a number");
+}
+console.log("Your number is valid: " + number);
+```
+
+- the `condition` statement checks if the user clicked cancel (null) or if the user entered a non-numeric value
+- the `while` loop will continue to loop as long as the user enters something other than a number
+- the `while` loop will stop looping when the user enters a number
+---
+## Activity: Loops
+
+- In pairs, work on the following problem in this jsfiddle sandbox
+
+https://jsfiddle.net/warsylewicz/asfxkgtu/
+
+Extra challenge: Display a medal on the page below the button based on the number of guesses it took them.
+- 1 to 5 guesses: 🥇
+- 6 to 10 guesses: 🥈
+- 11 to 15 guesses: 🥉
+
+---
+## Functions
+
+- a function is a block of code that performs a specific task
+- a function is useful when you need to repeat a set of instructions multiple times
+- a function is defined with the `function` keyword
+- a function is executed by calling it by name
+---
+## Function Syntax
+
+- the syntax for a function is:
+
+```js
+function name(parameter1, parameter2, parameter3, ...) {
+  // code to be executed
+}
+```
+
+- the `name` is the name of the function
+- the `parameter1`, `parameter2`, and `parameter3` are the parameters of the function
+- the `code to be executed` is the code that will be executed when the function is called
+---
+## Function Example
+
+- let's write a function that prints the numbers from `a` to `b` to the console
+
+```js
+function printNumbers(a, b) {
+  for (let i = a; i &lt;= b; i++) {
+    console.log(i);
+  }
+}
+```
+
+- the `name` of the function is `printNumbers`
+- the first parameter is `a`
+- the second parameter is `b`
+- the `code to be executed` is the `for` loop that prints the numbers from `a` to `b`
+---
+## Function Example (cont.)
+
+- let's call the `printNumbers` function
+
+```js
+let start = 5;
+let end = 15;
+printNumbers(start, end); // prints numbers from 5 to 15
+```
+---
+## Function return value
+
+- a function can return a value
+- the `return` keyword is used to return a value from a function
+- the `return` keyword can be used to return a value from a function
+- the `return` keyword can be used to exit a function
+- the `return` keyword can be used to return an object
+---
+## Function return value example
+
+- let's write a function that returns the sum of the numbers from `a` to `b`
+
+```js
+function sum(a, b) {
+  let sum = 0;
+  for (let i = a; i &lt;= b; i++) {
+    sum += i;
+  }
+  return sum;
+}
+```
+
+---
+## Function return value example (cont.)
+
+- let's call the `sum` function
+
+```js
+let start = 5;
+let end = 15;
+let result = sum(start, end);
+console.log(result); // prints 110
+```
+---
+## Activity: Functions
+
+In pairs, solve the following problem using functions
+
+- Write a function that the takes in two numbers and return the larger number
+- Write several tests for your function displaying them in the console
+- Challenge: Write a function that takes in three numbers and returns the largest number
+
+Put your code in a jsfiddle sandbox https://jsfiddle.net/
+
+
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="../reveal.js/plugin/search/search.js"></script>
+    <script src="../reveal.js/plugin/zoom/zoom.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        slideNumber: "c/t",
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom,
+        ],
+      });
+    </script>
+  </body>
+</html>
