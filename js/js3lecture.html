@@ -213,6 +213,30 @@ let result = sum(start, end);
 console.log(result); // prints 110
 ```
 ---
+## More DOM Manipulation
+
+Changing CSS Classes using JavaScript
+
+```js
+let element = document.getElementById("my-element");
+
+// If the class already exists, it will not be added.
+// Otherwise, it will be added.
+element.classList.add("my-class");
+
+// If the class exists, it will be removed.
+// Otherwise, nothing will happen.
+element.classList.remove("my-class");
+
+// If the class exists, it will be removed.
+// Otherwise, it will be added.
+element.classList.toggle("my-class");
+```
+
+Demo: https://jsfiddle.net/warsylewicz/Lj3oq1n6/
+
+---
+
 ## Activity: Functions
 
 In pairs, solve the following problem using functions
@@ -222,6 +246,9 @@ In pairs, solve the following problem using functions
 - Challenge: Write a function that takes in three numbers and returns the largest number
 
 Put your code in a jsfiddle sandbox https://jsfiddle.net/
+
+
+
 
 
           </textarea>
