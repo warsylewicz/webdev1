@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Lecture: Applying JavaScript Part 2</title>
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/theme/aaron.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown>
+          <textarea data-template>
+# Unit 9
+# Publishing a Website
+---
+## Topics
+
+- project types
+- website deployment tools
+---
+## Project Development Types
+
+- unopinionated
+  - no framework
+  - only vanilla JS and HTML/CSS
+  - no imposed structure
+  - joke website: http://vanilla-js.com/
+- unopinionated with libraries
+  - no imposed structure but uses external libraries
+  - e.g. jQuery, React, Angular, Vue, etc.
+- opinionated with frameworks
+  - tells you how to structure your project, where to put your files, how to name your files, how to write your code
+  - e.g. Next.js, Remix, Gatsby, Eleventy
+
+---
+## CPRG-213 Project Type
+
+- vanilla JS and HTML/CSS
+- no external libraries or external frameworks
+- self-imposed light-framework constraints using folders /scripts, /styles, /images
+---
+## Website Deployment Tools
+
+- FTP
+- **GitHub Pages**
+- Vercel
+- AWS S3
+- Azure Storage
+- Google Cloud Storage
+- Heroku
+- Digital Ocean
+- self-hosted server (e.g. Nginx, Apache, Caddy, IIS, Tomcat)
+
+---
+## git
+
+- version control system
+- tracks changes to files
+- allows multiple people to work on the same project
+- allows you to go back to previous versions of your project
+---
+## git terminology
+
+- repository (repo)
+  - a folder that contains all of the files for a project
+- commit
+  - a snapshot of the repository at a point in time
+- branch
+  - a separate version of the repository
+  - good for features not ready for the main branch
+- push/pull
+  - push: send your changes to a remote repository
+  - pull: get changes from a remote repository
+---
+## GitHub
+
+- a website that hosts git repositories
+- e.g. https://github.com/warsylewicz
+---
+## GitHub Pages
+
+- a feature of GitHub that allows you to host a website from a GitHub repository
+---
+## Activity: Deploying a Website
+
+Complete Unit 9 Activity Deploying to GitHub individually.
+---
+## GitHub Student Developer Pack
+
+- free access to many developer tools
+- https://education.github.com/pack
+---
+## GitHub Copilot
+
+- AI code completion
+- not recommended when learning something new
+- now that you know HTML, CSS, and JS, you can use it!
+- https://www.freecodecamp.org/news/how-to-use-github-copilot-with-visual-studio-code/
+
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="../reveal.js/plugin/search/search.js"></script>
+    <script src="../reveal.js/plugin/zoom/zoom.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        slideNumber: "c/t",
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom,
+        ],
+      });
+    </script>
+  </body>
+</html>
