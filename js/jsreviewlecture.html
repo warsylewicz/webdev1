@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Lecture: JS Review</title>
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/theme/aaron.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown>
+          <textarea data-template>
+# JS Review
+---
+## Topics
+
+- DOM, getElementById(), innerHTML, addEventListener()
+- variables
+- data types
+- input
+- output
+- operators
+- data type conversion (parseInt)
+
+---
+## Topics (continued)
+
+- conditional statements
+- loops
+- functions
+- more DOM manipulation (changing classes)
+
+---
+## JavaScript Example
+
+js1demo1.html
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Example</title>
+  </head>
+  <body>
+    <h1>JavaScript Example</h1>
+    <p id="message">Hello World!</p>
+    <button id="hello-button">Say Hello</button>
+    <script src="scripts/js1demo1.js"></script>
+  </body>
+</html>
+```
+---
+## JavaScript Example (continued)
+
+js1demo1.js
+```js
+let helloButton = document.getElementById("hello-button");
+helloButton.addEventListener("click", changeMessage);
+
+function changeMessage() {
+  let messageElement = document.getElementById("message");
+  messageElement.innerHTML = "Hello, JavaScript!";
+}
+```
+
+> Does this example make more sense now?
+---
+## JavaScript Activity
+
+- For each JS script, find the error and determine how to fix it.
+- Also, describe what does each script does.
+---
+## Script #1
+
+```js
+let message == "Hello World!";
+console.log(message);
+```
+---
+## Script #2
+
+```js
+let start = 10;
+for(let i = start; i &gt; 0; i--) {
+  alert('Countdown: ' + i);
+  i = i - 1;
+}
+```
+---
+## Script #3
+
+```js
+function updateMessage(newMessage) {
+  let messageElement = document.getElementByID("message");
+  messageElement.innerHTML = newMessage;
+}
+
+let message = "Hello World!";
+updateMessage(message);
+```
+---
+## Script #4
+
+```js
+function getAge() {
+  age = prompt("What is your age?");
+  return age;
+}
+
+let age = getAge();
+alert("You are " age " years old.");
+```
+---
+## Script #5
+
+```js
+function increment(value) {
+  return value++
+}
+
+console.log(increment(5));
+```
+---
+## Script #6
+
+```js
+function getList(max) {
+  let output = "";
+  for(let i = 1; i &lt;= max; i++) {
+    output = "Item #" + i + "\n";
+  }
+  return output;
+}
+
+let list = getList(5);
+alert(list);
+```
+---
+# That's all folks!
+
+Thank you for a wonderful semester!
+
+
+
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="../reveal.js/plugin/search/search.js"></script>
+    <script src="../reveal.js/plugin/zoom/zoom.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        slideNumber: "c/t",
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom,
+        ],
+      });
+    </script>
+  </body>
+</html>
