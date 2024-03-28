@@ -23,17 +23,169 @@
           <textarea data-template>
 # Unit 8
 # Applying JavaScript
-# Day of Activities
+# Lots of Activities!
 
 ---
 
+## Additional Topics
+
+- string manipulation
+- logic practice
+- problem solving
+
+---
+
+## String Manipulation
+
+- length: return the length of a string
+- the length property is a property, not a method, so it doesn't have parentheses
+
+```js
+let str = "Hello World!";
+console.log(str.length); // 12
+```
+
+
+---
+
+- charAt(): return the character at a specific index
+
+```js
+// print each character in a string
+let str = "Hello World!";
+for (let i = 0; i &lt; str.length; i++) {
+  console.log(str.charAt(i));
+}
+```
+
+---
+
+- includes(): check if a string contains another string
+
+```js
+let str = "Hello World!";
+console.log(str.includes("World")); // true
+console.log(str.includes("world")); // false
+```
+
+---
+
+- indexOf(): return the index of the first occurrence of a string
+
+```js
+let str = "Hello World!";
+console.log(str.indexOf("World")); // 6
+```
+
+---
+
+- repeat(): repeat a string a number of times
+
+```js
+let str = "Hello World!";
+console.log(str.repeat(3)); // Hello World!Hello World!Hello World!
+```
+
+---
+
+- replace(): replace a string with another string
+
+```js
+let str = "Hello World!";
+console.log(str.replace("World", "Universe")); // Hello Universe!
+```
+
+---
+
+- startsWith(): check if a string starts with another string
+
+```js
+let str = "Hello World!";
+console.log(str.startsWith("Hello")); // true
+console.log(str.startsWith("World")); // false
+```
+
+---
+
+- endsWith(): check if a string ends with another string
+
+```js
+let str = "Hello World!";
+console.log(str.endsWith("rld!")); // true
+console.log(str.endsWith("Hello")); // false
+```
+
+---
+
+- substring(): returns the part of the string between the start and end indexes
+
+```js
+let str = "Hello World!";
+console.log(str.substring(6, 11)); // World
+```
+
+---
+
+- substr(): returns the part of the string starting from the start index and a number of characters
+
+```js
+let str = "Hello World!";
+console.log(str.substr(6, 5)); // World
+```
+
+---
+
+- toUpperCase(): convert a string to uppercase
+
+```js
+let str = "Hello World!";
+console.log(str.toUpperCase()); // HELLO WORLD!
+```
+
+---
+
+- toLowerCase(): convert a string to lowercase
+
+```js
+let str = "Hello World!";
+console.log(str.toLowerCase()); // hello world!
+```
+
+---
+
+- trim(): remove whitespace from the beginning and end of a string
+
+whitespace includes spaces " ", tabs "\t", and newlines "\n" and "\r"
+
+```js
+let str = "\tHello World! \n";
+console.log(str.trim()); // Hello World!
+```
+
+---
+
+## String and Logic Practice
+
+### CodingJS
+
 https://the-winter.github.io/codingjs/
+
+- do 2 problems from each warmup-1, string-1, and logic-1
+- then, do 1 problem from each warmup-2, string-2, and logic-2
+- consider doing more problems if you have time
+
+---
+
+## More Advanced Practice
 
 https://leetcode.com/problemset/
 
 https://www.codewars.com/
 
----
+Recommended problems for you to try:
+
+- https://leetcode.com/problems/valid-parentheses/
+- https://leetcode.com/problems/valid-palindrome/
 
 
 
