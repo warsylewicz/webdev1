@@ -1,0 +1,25 @@
+/* nav.css */
+.navbar {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f0f0f0;
+  align-items: center;
+}
+
+.logo {
+  background: lightblue;
+  padding: 0.5rem 1rem;
+}
+
+.search-box {
+  flex-grow: 1;
+  background: white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

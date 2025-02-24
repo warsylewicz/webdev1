@@ -1,0 +1,21 @@
+.gallery {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+  background: #eee;
+}
+
+.photo {
+  width: 200px;
+  height: 150px;
+  background: white;
+  border: 2px solid #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
