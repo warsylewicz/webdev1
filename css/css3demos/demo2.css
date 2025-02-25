@@ -3,7 +3,6 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   justify-content: center;
   padding: 2rem;
   background: #eee;
@@ -14,6 +13,7 @@
   height: 150px;
   background: white;
   border: 2px solid #999;
+  margin: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;

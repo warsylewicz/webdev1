@@ -1,7 +1,6 @@
 /* nav.css */
 .navbar {
   display: flex;
-  gap: 1rem;
   padding: 1rem;
   background: #f0f0f0;
   align-items: center;
@@ -16,6 +15,7 @@
   flex-grow: 1;
   background: white;
   padding: 0.5rem;
+  margin: 0 1rem;
   text-align: center;
 }
 
