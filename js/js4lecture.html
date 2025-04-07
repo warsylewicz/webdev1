@@ -53,9 +53,7 @@ console.log(str.length); // 12
 ```js
 // print each character in a string
 let str = "Hello World!";
-for (let i = 0; i &lt; str.length; i++) {
-  console.log(str.charAt(i));
-}
+console.log(str.charAt(1)); // e
 ```
 
 ---
@@ -79,49 +77,11 @@ console.log(str.indexOf("World")); // 6
 
 ---
 
-- repeat(): repeat a string a number of times
-
-```js
-let str = "Hello World!";
-console.log(str.repeat(3)); // Hello World!Hello World!Hello World!
-```
-
----
-
 - replace(): replace a string with another string
 
 ```js
 let str = "Hello World!";
 console.log(str.replace("World", "Universe")); // Hello Universe!
-```
-
----
-
-- startsWith(): check if a string starts with another string
-
-```js
-let str = "Hello World!";
-console.log(str.startsWith("Hello")); // true
-console.log(str.startsWith("World")); // false
-```
-
----
-
-- endsWith(): check if a string ends with another string
-
-```js
-let str = "Hello World!";
-console.log(str.endsWith("rld!")); // true
-console.log(str.endsWith("Hello")); // false
-```
-
----
-
-- substring(): returns the part of the string between the start and end indexes
-
-```js
-let str = "Hello World!";
-console.log(str.substring(6, 11)); // World
 ```
 
 ---
@@ -161,6 +121,18 @@ whitespace includes spaces " ", tabs "\t", and newlines "\n" and "\r"
 let str = "\tHello World! \n";
 console.log(str.trim()); // Hello World!
 ```
+
+---
+
+## Demo: Problem Solving
+
+- Write a function that takes a string and returns the number of vowels in the string
+
+1. Understand the problem, what is the input and output?
+2. Break the problem down into smaller parts, e.g. 
+   - how do you check if a character is a vowel?
+   - how do you check all characters?
+3. Write the code and test it
 
 ---
 
